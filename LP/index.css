@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  text-align: center;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+.first-view {
+  text-align: center;
+  height: 500px;
+  background-color: beige;
+}
+
+.benefits {
+  text-align: center;
+  height: 500px;
+  background-color: azure;
+}
+
+.faq-question {
+  text-align: center;
+  height: 500px;
+  background-color: bisque;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: blanchedalmond;
+}
