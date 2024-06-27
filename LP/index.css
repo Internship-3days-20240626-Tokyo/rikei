@@ -47,6 +47,33 @@ footer {
   background-color: blanchedalmond;
 }
 
+/*セクション３CSS*/
+#section3{
+  display: flex;
+    flex-direction: column;
+    gap: 20px; /* ここで各divの間の空白を設定 */
+  }
+.effect{
+  position: relative;
+  left: 50px;
+}
+.title{
+  width: 130px;
+  background-color: lightskyblue;
+}
+#diet{
+  border: solid;
+  border-radius: 8px;
+}
+#balancing-both{
+  border: solid;
+  border-radius: 8px;
+}
+#girl{
+  border: solid;
+  border-radius: 8px;
+
+
 .selections {
   display: flex;
   list-style: none;
@@ -68,4 +95,5 @@ footer {
   box-sizing: border-box; /* パディングと枠線を含めたボックスサイズを計算 */
   margin: 0 auto; /* 要素を中央に配置 */
   text-align: center; /* テキストを中央揃え */
+
 }
