@@ -41,8 +41,56 @@ html {
   background-color: bisque;
 }
 
-footer {
+/* footer */
+
+.footer {
+  background-color: antiquewhite;
+  padding-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.company-ttl {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-invite {
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+}
+
+.footer-invite-txt {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.tableA {
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tableA th, .tableA td {
+  border: 1px solid #000;
+}
+
+.tableA th {
+  font-weight: bold;
+}
+
+.copyright {
   text-align: center;
-  height: 50px;
-  background-color: blanchedalmond;
+  border-top: 1px solid #e6e6fa;
 }
