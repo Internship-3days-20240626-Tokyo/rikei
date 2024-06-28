@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
-html {
-  font-size: 62.5%;
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; /* フォントサイズの指定 */
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-bottom: 1px solid #122939;
 }
 
 .header-nav {
@@ -44,16 +49,39 @@ html {
 /* footer */
 
 .footer {
-  background-color: antiquewhite;
-  padding-top: 20px;
+  padding: 0 20px;
+  background: linear-gradient(rgba(0, 28, 43, 0.6), rgba(0, 28, 43, 0.6)),
+    url("images/footer-background.png");
+  position: relative;
+  background-size: cover; /* 画像が背景全体を覆うようにする */
+  background-repeat: no-repeat; /* 背景画像が繰り返されないようにする */
+  background-attachment: fixed; /* 背景画像を固定する */
 }
 
 .footer-content {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  max-width: 768px;
   margin: 0 auto;
+}
+
+.footer-sns {
+  
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-sns-item {
+  width: 50px; /* 親要素の幅を設定 */
+  height: 50px; /* 親要素の高さを設定 */
+  overflow: hidden; /* 画像がはみ出さないようにする */
+}
+
+.footer-sns-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* 画像の縦横比を維持して表示 */
 }
 
 .company-ttl {
@@ -61,23 +89,23 @@ html {
   font-weight: bold;
 }
 
+.company-content {
+  width: 40%;
+}
+
 .footer-invite {
-  margin: 0 auto;
-  position: relative;
-  width: 200px;
+  
 }
 
 .footer-invite-txt {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
 
 .tableA {
-  margin: 0 auto;
   text-align: left;
   border-collapse: collapse;
 }
@@ -123,7 +151,7 @@ html {
   border: solid;
   border-radius: 8px;
 }
-#girl{
+#girl {
   border: solid;
   border-radius: 8px;
 }
@@ -151,4 +179,45 @@ html {
   margin: 0 auto; /* 要素を中央に配置 */
   text-align: center; /* テキストを中央揃え */
 
+}
+
+/* section2-img */
+.shindan-images-contents img {
+  width: 100%;
+}
+
+/* section1-img */
+#section1 {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 28, 43, 0.6), rgba(0, 28, 43, 0.6)),
+    url("images/kv-background.png") 70% center/cover;
+  position: relative;
+}
+
+
+
+.section1-content {
+  position: absolute;
+  width: 100%;
+  margin-left: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section1-txt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section1-txt-sub {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* section3 */
+#section2 {
+  padding-top: 20%;
 }
