@@ -472,3 +472,10 @@ body {
   background    : #ffffff;     /* 文字色     */
 
 }
+
+/* section0-img */
+.encourage-messeage-images-contents img {
+  width: 100%;
+  margin-bottom: 50px;
+
+}
