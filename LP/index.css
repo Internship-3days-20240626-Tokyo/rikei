@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-
 main {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
 body {
     font-family: 'Arial', sans-serif; 
     font-size: 16px; /* フォントサイズの指定 */
+
 }
 
 .header {
@@ -49,27 +49,31 @@ body {
 /* footer */
 
 .footer {
-  padding: 0 20px;
-  background: linear-gradient(rgba(0, 28, 43, 0.6), rgba(0, 28, 43, 0.6)),
+  background: #383838;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  /* background: linear-gradient(rgba(0, 28, 43, 0.6), rgba(0, 28, 43, 0.6)),
     url("images/footer-background.png");
   position: relative;
-  background-size: cover; /* 画像が背景全体を覆うようにする */
-  background-repeat: no-repeat; /* 背景画像が繰り返されないようにする */
-  background-attachment: fixed; /* 背景画像を固定する */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 .footer-content {
   display: flex;
-  gap: 20px;
   justify-content: space-between;
+  width: 80%;
   margin: 0 auto;
 }
 
 .footer-sns {
-  
+  padding: 40px 0;
+  justify-content: center;
+  height: 40px;
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 30px;
+  
 }
 
 .footer-sns-item {
@@ -84,25 +88,46 @@ body {
   object-fit: contain; /* 画像の縦横比を維持して表示 */
 }
 
+.footer-btn {
+  width: 280px;
+  height: 64px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-invite {
+  margin-top: 20px;
+}
+
+.footer-invite-txt {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  text-decoration: none;
+  color: #383838;
+  font-size: 18px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    0,
+    #fff,
+    #fff
+    );
+}
+
 .company-ttl {
   font-size: 16px;
   font-weight: bold;
+  color: #fff8dc;
 }
 
 .company-content {
   width: 40%;
-}
-
-.footer-invite {
-  
-}
-
-.footer-invite-txt {
-  font-size: 24px;
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
 }
 
 .tableA {
@@ -111,16 +136,23 @@ body {
 }
 
 .tableA th, .tableA td {
-  border: 1px solid #000;
+  border: 1px solid #fff8dc;
 }
 
 .tableA th {
+  color: #fff8dc;
   font-weight: bold;
 }
 
+.tableA td {
+  color: #fff8dc;
+}
+
 .copyright {
+  padding: 0 20px;
   text-align: center;
-  border-top: 1px solid #e6e6fa;
+  color: chocolate;
+  font-weight: bold;
 }
 
 /*セクション３CSS*/
@@ -149,7 +181,6 @@ body {
   border: solid;
   border-radius: 8px;
 }
-
 
 .selections {
   display: flex;
