@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+html,body {
+  overflow-x: hidden;
+}
 main {
   width: 80%;
   margin: 0 auto;
@@ -8,7 +10,6 @@ main {
 body {
     font-family: 'Arial', sans-serif; 
     font-size: 16px; /* フォントサイズの指定 */
-
 }
 
 .header {
@@ -158,8 +159,8 @@ body {
 /*セクション３CSS*/
 #section3{
   display: flex;
-    flex-direction: column;
-    gap: 20px; /* ここで各divの間の空白を設定 */
+  flex-direction: column;
+  gap: 20px; /* ここで各divの間の空白を設定 */
   }
 .effect{
   /*ぼかし蛍光*/
@@ -194,12 +195,13 @@ body {
 /*プラン画像大きさ*/
 .plan{
   width: 700px;
-  padding-left: 90px;
+  /*padding-left: 90px;
   padding-right: 30px;
-  
-
+  */
+  text-align: center;
 }
 #diet{
+  text-align: center;
   margin-top: 60px;
   margin-left: 30px;
   margin-right: 30px;
@@ -208,8 +210,6 @@ body {
   border: solid;
   border-radius: 8px;
   border-color: #6666ff;
-   /*アニメーションの設定*/
-   transition: all .10s;
 }
 #diet:hover{
   transform: scale(1.2);
@@ -217,6 +217,7 @@ body {
   box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #balancing-both{
+  text-align: center;
   margin: 30px;
   position: relative; 
   border: solid;
@@ -229,6 +230,7 @@ body {
   box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #girl {
+  text-align: center;
   margin: 30px;
   position: relative; 
   border: solid;
@@ -330,6 +332,10 @@ body {
 
 
 /* section2-img */
+.shindan-images-contents {
+  margin-top: 80px;
+}
+
 .shindan-images-contents img {
   width: 100%;
 }
@@ -341,8 +347,6 @@ body {
     url("images/kv-background.png") 70% center/cover;
   position: relative;
 }
-
-
 
 .section1-content {
   position: absolute;
@@ -365,8 +369,41 @@ body {
   color: #fff;
 }
 
-/* section3 */
+/* section2 */
 #section2 {
+
+  margin-top: 80px;
+}
+
+.section2-content {
+  position: relative;
+  background: #2c3e50;
+  height: 20vh;
+}
+
+.section2-content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 65px 65px 0 65px;
+  border-color: #2c3e50 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.section2-ttl {
+  font-size: 36px;
+  position: absolute;
+  color: #fff8dc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  
+  
+
   padding-top: 20%;
 }
 
@@ -433,10 +470,12 @@ body {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : #ffb60b;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
+
 }
 
 /* section0-img */
 .encourage-messeage-images-contents img {
   width: 100%;
   margin-bottom: 50px;
+
 }
