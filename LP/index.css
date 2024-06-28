@@ -300,6 +300,7 @@ nav {
   display       : inline-block;
   border-radius : 5%;          /* 角丸       */
   font-size     : 18pt;        /* 文字サイズ */
+  font-weight: bold;
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 20px 60px;   /* 余白       */
@@ -322,6 +323,7 @@ nav {
   display       : inline-block;
   border-radius : 5%;          /* 角丸       */
   font-size     : 18pt;        /* 文字サイズ */
+  font-weight: bold;
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 20px 150px;   /* 余白       */
@@ -344,6 +346,7 @@ nav {
   display       : inline-block;
   border-radius : 5%;          /* 角丸       */
   font-size     : 18pt;        /* 文字サイズ */
+  font-weight: bold;
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 20px 60px;   /* 余白       */
