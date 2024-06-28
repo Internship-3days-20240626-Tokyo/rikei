@@ -173,16 +173,26 @@ body {
   position: relative;
   text-align: center;
 }
-.title{
-  margin-left:30px ;
-  text-align: center;
-  width: 200px;
-  background-color: lightskyblue;
-}
+  .diet{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color: #6666ff;
+  }
+  .both{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color: #ffcb21;
+  }
+  .girl{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color:#ff66ff ;
+  }
 /*プラン画像大きさ*/
 .plan{
-  /*align-items: center; /* 垂直方向の中央揃え */
-  /*justify-content: space-around; /* 水平方向の中央揃え */
   width: 700px;
   padding-left: 90px;
   padding-right: 30px;
@@ -190,16 +200,45 @@ body {
 
 }
 #diet{
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #6666ff;
+   /*アニメーションの設定*/
+   transition: all .10s;
+}
+#diet:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #balancing-both{
+  margin: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #ffcb21;
+}
+#balancing-both:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #girl {
+  margin: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #ff66ff ;
+}
+#girl:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .selections {
