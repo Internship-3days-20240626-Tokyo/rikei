@@ -12,10 +12,14 @@ body {
 }
 
 .header {
+  display: flex;
   border-bottom: 1px solid #122939;
+  justify-content:space-between; 
+  align-items: center;
+  background-color: #FAC61E;
 }
 
-.header-nav {
+.header-left {
   display: flex;
   gap: 20px;
 }
@@ -24,8 +28,35 @@ body {
   width: 200px;
 }
 
-.header-nav-item {
-  display: inline;
+.nav-container {
+  display: flex;
+  margin-right: 100px;
+  list-style: none;
+}
+
+nav {
+  margin-left:auto;
+}
+
+.nav-item {
+  margin-left:40px;
+}
+
+.nav-a {
+  text-decoration: none;
+  display       : inline-block;
+  font-weight: bold;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 78px;   /* 余白       */
+  background    : #ffb60b;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ffb60b;    /* 枠の指定 */
 }
 
 .first-view {
