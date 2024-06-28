@@ -332,6 +332,10 @@ body {
 
 
 /* section2-img */
+.shindan-images-contents {
+  margin-top: 80px;
+}
+
 .shindan-images-contents img {
   width: 100%;
 }
@@ -343,8 +347,6 @@ body {
     url("images/kv-background.png") 70% center/cover;
   position: relative;
 }
-
-
 
 .section1-content {
   position: absolute;
@@ -367,8 +369,41 @@ body {
   color: #fff;
 }
 
-/* section3 */
+/* section2 */
 #section2 {
+
+  margin-top: 80px;
+}
+
+.section2-content {
+  position: relative;
+  background: #2c3e50;
+  height: 20vh;
+}
+
+.section2-content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 65px 65px 0 65px;
+  border-color: #2c3e50 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.section2-ttl {
+  font-size: 36px;
+  position: absolute;
+  color: #fff8dc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  
+  
+
   padding-top: 20%;
 }
 
@@ -435,4 +470,5 @@ body {
   box-shadow    : none;        /* カーソル時の影消去 */
   color         : #ffb60b;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
+
 }
