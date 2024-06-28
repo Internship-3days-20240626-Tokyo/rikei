@@ -178,19 +178,19 @@ body {
     margin-left:30px ;
     text-align: center;
     width: 200px;
-    background-color: #6666ff;
+    color: #6666ff;
   }
   .both{
     margin-left:30px ;
     text-align: center;
     width: 200px;
-    background-color: #ffcb21;
+    color: #ffcb21;
   }
   .girl{
     margin-left:30px ;
     text-align: center;
     width: 200px;
-    background-color:#ff66ff ;
+    color:#ff66ff ;
   }
 /*プラン画像大きさ*/
 .plan{
