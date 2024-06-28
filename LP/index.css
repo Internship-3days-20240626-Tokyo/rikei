@@ -137,6 +137,12 @@ body {
   width: 130px;
   background-color: lightskyblue;
 }
+/*プラン画像大きさ*/
+.plan{
+  width: 700px;
+  height: 200px;
+
+}
 #diet{
   border: solid;
   border-radius: 8px;
