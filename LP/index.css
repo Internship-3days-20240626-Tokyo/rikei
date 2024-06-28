@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+html,body {
+  overflow-x: hidden;
+}
 main {
   width: 80%;
   margin: 0 auto;
@@ -8,7 +10,6 @@ main {
 body {
     font-family: 'Arial', sans-serif; 
     font-size: 16px; /* フォントサイズの指定 */
-
 }
 
 .header {
@@ -158,8 +159,8 @@ body {
 /*セクション３CSS*/
 #section3{
   display: flex;
-    flex-direction: column;
-    gap: 20px; /* ここで各divの間の空白を設定 */
+  flex-direction: column;
+  gap: 20px; /* ここで各divの間の空白を設定 */
   }
 .effect{
   /*ぼかし蛍光*/
@@ -173,33 +174,73 @@ body {
   position: relative;
   text-align: center;
 }
-.title{
-  margin-left:30px ;
-  text-align: center;
-  width: 200px;
-  background-color: lightskyblue;
-}
+  .diet{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color: #6666ff;
+  }
+  .both{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color: #ffcb21;
+  }
+  .girl{
+    margin-left:30px ;
+    text-align: center;
+    width: 200px;
+    background-color:#ff66ff ;
+  }
 /*プラン画像大きさ*/
 .plan{
-  /*align-items: center; /* 垂直方向の中央揃え */
-  /*justify-content: space-around; /* 水平方向の中央揃え */
   width: 700px;
-  padding-left: 90px;
+  /*padding-left: 90px;
   padding-right: 30px;
-  
-
+  */
+  text-align: center;
 }
 #diet{
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #6666ff;
+}
+#diet:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #balancing-both{
+  text-align: center;
+  margin: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #ffcb21;
+}
+#balancing-both:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 #girl {
+  text-align: center;
+  margin: 30px;
+  position: relative; 
   border: solid;
   border-radius: 8px;
+  border-color: #ff66ff ;
+}
+#girl:hover{
+  transform: scale(1.2);
+  top:-5px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .selections {
@@ -330,6 +371,7 @@ body {
 
 /* section2 */
 #section2 {
+
   margin-top: 80px;
 }
 
@@ -361,4 +403,72 @@ body {
   transform: translate(-50%, -100%);
   
   
+
+  padding-top: 20%;
+}
+
+.img-price {
+  padding: 30px;
+  margin: auto;
+  display: block;
+}
+
+.emphasis-underline {
+  color: #454545;
+  text-shadow: 2px 1px #ffd676, 4px 2px #ffca4f, 6px 3px #ffbd23;
+}
+
+.rounded-corner {
+  padding: 0.5em 1em;
+  /* margin: 1em auto; */
+  font-weight: bold;
+  color: black; /*文字色*/
+  background: #FFF;
+  border: solid 3px black; /*線*/
+  border-radius: 10px; /*角の丸み*/
+  width: fit-content; /* 自動的に幅をコンテンツに合わせる */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* おしゃれな影を追加 */
+  text-align: center;
+}
+
+#friends {
+  padding: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1em;
+}
+
+#highlight {
+  color: #f70606; 
+  font-weight: bold; 
+  font-size: 1.8em; 
+}
+
+#friends p {
+  color: black; 
+  font-size: 1.5em; 
+}
+
+.button-detail {
+  text-decoration: none;
+  display       : inline-block;
+  font-weight: bold;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 78px;   /* 余白       */
+  background    : #ffb60b;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ffb60b;    /* 枠の指定 */
+}
+
+.button-detail:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ffb60b;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+
 }
