@@ -343,8 +343,6 @@ body {
 /* section1-img */
 #section1 {
   height: 100vh;
-  background: linear-gradient(rgba(0, 28, 43, 0.6), rgba(0, 28, 43, 0.6)),
-    url("images/kv-background.png") 70% center/cover;
   position: relative;
 }
 
@@ -357,10 +355,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.section1-txt {
+.section2-txt {
+  position: absolute;
   font-size: 16px;
-  font-weight: bold;
   color: #fff;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section1-txt-sub {
@@ -379,6 +380,7 @@ body {
   position: relative;
   background: #2c3e50;
   height: 20vh;
+
 }
 
 .section2-content::before {
