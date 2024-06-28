@@ -162,24 +162,88 @@ body {
   list-style: none;
   justify-content: space-around;
   padding: 8px 25px;
-  
+  border-bottom: none;
   margin: auto;
 }
 
-.selection-item {
-  /* border: 2px solid blue; */
-  /* padding: 15px; */
-  border: 2px solid blue; /* 枠線の太さと色 */
-  width: 150px; /* 要素の幅を指定 */
-  height: 50px; /* 要素の高さを指定 */
-  display: flex; /* フレックスボックスを使用して中央揃え */
-  align-items: center; /* 垂直方向の中央揃え */
-  justify-content: space-around; /* 水平方向の中央揃え */
-  box-sizing: border-box; /* パディングと枠線を含めたボックスサイズを計算 */
-  margin: 0 auto; /* 要素を中央に配置 */
-  text-align: center; /* テキストを中央揃え */
+/* .selection-item {
+  border: 2px solid blue; 
+  width: 150px; 
+  height: 50px;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around; 
+  box-sizing: border-box; 
+  margin: 0 auto; 
+  text-align: center; 
+} */
 
+.selection-button-diet {
+  text-decoration: none;
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 20px 60px;   /* 余白       */
+  background    : #6666ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #6666ff;    /* 枠の指定 */
 }
+
+.selection-button-diet:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #6666ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.selection-button-balancing-both {
+  text-decoration: none;
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 20px 150px;   /* 余白       */
+  background    : #ffcb21;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ffcb21;    /* 枠の指定 */
+}
+
+.selection-button-balancing-both:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ffcb21;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.selection-button-girl {
+  text-decoration: none;
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 20px 60px;   /* 余白       */
+  background    : #ff66ff;    /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff66ff;   
+}
+
+.selection-button-girl:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff66ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
 
 /* section2-img */
 .shindan-images-contents img {
